@@ -1,6 +1,6 @@
 # Copyright(c) 2015-2019 ACCESS CO., LTD. All rights reserved.
 
-antikythera_dep = {:antikythera, [github: "access-company/antikythera", ref: "db43a8dbdd29bcddb8f68121a3164050a2206f46"]}
+antikythera_dep = {:antikythera, [github: "wses-yoshida/antikythera", ref: "e108e59d2339edd0b0fad31ad4f41f56df45be55"]}
 
 try do
   parent_dir = Path.expand("..", __DIR__)
@@ -37,7 +37,7 @@ try do
     end
 
     def project() do
-      github_url = "https://github.com/access-company/antikythera_instance_example"
+      github_url = "https://github.com/wses-yoshida/antikythera_instance_example"
       base_settings = Antikythera.MixCommon.common_project_settings() |> Keyword.replace!(:elixir, @elixir_version)
       [
         app:             :antikythera_instance_example,
